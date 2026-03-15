@@ -122,15 +122,14 @@ Conditional-DCGAN-CIFAR10
 
 Input samples from the CIFAR-10 dataset used during training.
 
-training_images_with_labels.png
-
+![Training Images](results/training_images_with_labels.png)
 ---
 
 ## Generator vs Discriminator Loss
 
 The graph below illustrates the **adversarial learning dynamics** between the generator and discriminator during training.
 
-generator_discriminator_loss.png
+![Loss Graph](results/generator_discriminator_loss.png)
 
 ---
 
@@ -138,8 +137,7 @@ generator_discriminator_loss.png
 
 After training, the generator is able to produce **class-conditioned synthetic images** corresponding to different CIFAR-10 categories.
 
-generated_images_by_class.png
-
+![Generated Images](results/generated_images_by_class.png)
 ---
 
 # Technologies Used
