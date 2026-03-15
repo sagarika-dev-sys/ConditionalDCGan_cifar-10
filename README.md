@@ -210,6 +210,12 @@ Potential enhancements to this project include:
 
 # Author
 
+**Sagarika Sahoo**
+
+-GitHub: https://github.com/sagrika-dev-sys
+
+-LinkedIn: https://linkedin.com/in/sagarikasahoo2006
+
 Developed as part of a deep learning exploration into **Generative Adversarial Networks and conditional image synthesis**.
 
 ---
