@@ -124,7 +124,6 @@ Input samples from the CIFAR-10 dataset used during training.
 
 training_images_with_labels.png
 
-
 ---
 
 ## Generator vs Discriminator Loss
