@@ -23,6 +23,39 @@ This project explores the power of **conditional generative models** in deep lea
 
 ---
 
+# How It Works
+
+The Conditional DCGAN extends the traditional GAN framework by incorporating **class label information** into both the generator and discriminator networks. This conditioning allows the model to generate images corresponding to a specific class.
+
+The workflow of the model is as follows:
+
+1. **Input Preparation**  
+   Real images from the CIFAR-10 dataset are used along with their corresponding class labels.
+
+2. **Generator Input**  
+   A random noise vector is combined with a class label to guide the generator in producing an image belonging to that category.
+
+3. **Image Generation**  
+   The generator processes the noise and label through transposed convolution layers to create a synthetic image.
+
+4. **Discriminator Evaluation**  
+   The discriminator receives both real and generated images along with their labels and learns to classify them as **real or fake**.
+
+5. **Adversarial Training**  
+   The generator and discriminator compete with each other during training.  
+   - The discriminator tries to correctly identify fake images.  
+   - The generator improves by trying to fool the discriminator.
+
+6. **Class-Conditioned Image Generation**  
+   After training, the generator can produce images for a **specific CIFAR-10 class by simply providing the desired label**.
+
+---
+Noise + Label → Generator → Generated Image
+                     ↓
+Real Image + Label → Discriminator → Real/Fake
+
+---
+
 # Dataset
 
 The model is trained on the **CIFAR-10 dataset**, which contains:
